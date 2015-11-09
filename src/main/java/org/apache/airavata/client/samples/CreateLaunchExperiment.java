@@ -58,7 +58,7 @@ public class CreateLaunchExperiment {
     private static Airavata.Client airavataClient;
 
     private static String echoAppId = "Echo_36fbb479-5b41-4f48-a9c5-382ee910ac6b";
-    private static String wrfAppId = "WRF_7ad5da38-c08b-417c-a9ea-da9298839762";
+    private static String wrfAppId = "WRF_5273175f-a96a-46a1-8c36-ef1732e5543d";
     private static String amberAppId = "Amber_49b16f6f-93ab-4885-9971-6ab2ab5eb3d3";
     private static String gromacsAppId = "GROMACS_05622038-9edd-4cb1-824e-0b7cb993364b";
     private static String espressoAppId = "ESPRESSO_10cc2820-5d0b-4c63-9546-8a8b595593c1";

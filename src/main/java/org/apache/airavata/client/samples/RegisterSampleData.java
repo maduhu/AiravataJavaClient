@@ -65,8 +65,7 @@ public class RegisterSampleData {
     public void init() {
         String airavataHome = System.getenv("AIRAVATA_HOME");
         if (airavataHome == null) {
-            sampleScriptDir = new File("").getAbsolutePath() +
-                    "/modules/distribution/server/src/main/resources/samples/scripts";
+            sampleScriptDir = "/home/ruveni/FYP/Apache-Airavata/airavata-0.14_release/modules/distribution/server/src/main/resources/samples/scripts";
         } else {
             sampleScriptDir = airavataHome + "/samples/scripts";
         }

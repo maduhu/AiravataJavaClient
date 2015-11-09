@@ -120,25 +120,25 @@ public class RegisterSampleApplications {
 
             RegisterSampleApplications registerSampleApplications = new RegisterSampleApplications(airavataClient);
 
-            registerLocalHost();
+            //registerLocalHost();
             //Register all compute hosts
-//            registerSampleApplications.registerXSEDEHosts();
+            registerSampleApplications.registerXSEDEHosts();
 
 
             //Register Gateway Resource Preferences
-//            registerSampleApplications.registerGatewayResourceProfile();
+            registerSampleApplications.registerGatewayResourceProfile();
 
             //Register all application modules
-//            registerSampleApplications.registerAppModules();
+            registerSampleApplications.registerAppModules();
 
             //Register all application deployments
-//            registerSampleApplications.registerAppDeployments();
+            registerSampleApplications.registerAppDeployments();
 
             //Register all application interfaces
-//            registerSampleApplications.registerAppInterfaces();
+            registerSampleApplications.registerAppInterfaces();
 
             //write output into propertiesFile
-//            registerSampleApplications.writeIdPropertyFile();
+            registerSampleApplications.writeIdPropertyFile();
 
         } catch (Exception e) {
             logger.error("Error while connecting with server", e.getMessage());
@@ -800,13 +800,13 @@ public class RegisterSampleApplications {
             appModules.add(wrfModuleId);
 
             InputDataObjectType input1 = RegisterSampleApplicationsUtils.createAppInput("Config_Namelist_File", null,
-                    DataType.URI, null, false, "Namelist Configuration File - namelist.input", null);
+                    DataType.URI, null, false, "/home/ruveni/FYP/Apache-Airavata/amelist.input", null);
 
             InputDataObjectType input2 = RegisterSampleApplicationsUtils.createAppInput("WRF_Initial_Conditions", null,
-                    DataType.URI, null, false, "Initial Conditions File - wrfinput_d01", null);
+                    DataType.URI, null, false, "/home/ruveni/FYP/Apache-Airavata/wrfinput_d01", null);
 
             InputDataObjectType input3 = RegisterSampleApplicationsUtils.createAppInput("WRF_Boundary_File", null,
-                    DataType.URI, null, false, "Boundary Conditions File - wrfbdy_d01", null);
+                    DataType.URI, null, false, "/home/ruveni/FYP/Apache-Airavata/wrfbdy_d01", null);
 
             List<InputDataObjectType> applicationInputs = new ArrayList<InputDataObjectType>();
             applicationInputs.add(input1);
